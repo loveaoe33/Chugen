@@ -51,13 +51,15 @@ Route::get('new', function () {
 });
 
 Route::get('pdf', function () {
+    /*
     Session::put('users', 1234);
+    */
  
     if (Session::has('users')) {
         return view('pdf');
     }else
     {
-        return view('login');
+        return view('loginChugen');
     }
     
 });
@@ -87,4 +89,4 @@ Route::get('pdf', function () {
    
 }
 */
-Route::post('check','appleController@checkAjax')->name('apple.checkAjax');
+Route::post('check','appleController@checkAcjax')->name('apple.checkAcjax');

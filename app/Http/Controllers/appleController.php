@@ -6,13 +6,27 @@ use Illuminate\Http\Request;
 
 class appleController extends Controller
 {
-    public function checkAjax(Request $request)
+    public function checkAcjax(Request $request)
     {
-        $test=$request->all();
-        $response = array(
-            'status' => $test,
-            
-        );
-    return response()->json($response);
+     
+        $Account=$request->get('Account');
+        $Password=$request->get('Password');
+        $userdata=1;
+      
+
+
+        
+        $request->session()->put('users', $Account);
+        return response()->json($userdata);
+    
+     
+        
+        
     }
 }
+
+
+
+
+
+

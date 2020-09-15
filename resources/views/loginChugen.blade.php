@@ -119,20 +119,20 @@
      $.ajax({
     type: "POST",
     url: 'check',
-    data: { Account:a,Password:b,test2:CSRF_TOKEN },
+    data: { Account:a ,Password:b, test2:CSRF_TOKEN },
     dataType: "JSON",
     success: function (response) {
 		document.getElementById("alert").style.display=""
-		$(".alert").text(response.status);
-		/*
+		$(".alert").text(response);
+		
 		$(location).attr('href', 'pdf');
-		*/
+		
     },
     error: function (thrownError) {
-		setTimeout(function(){   $("#alert").fadeIn("slow");},200);
-		setTimeout(function(){   $("#alert").fadeOut("slow");},2000);
+		setTimeout(function(){$("#alert").fadeIn("slow");},200);
+		setTimeout(function(){$("#alert").fadeOut("slow");},2000);
       
-		$(".alert").text('帳號或密碼錯誤');
+		$(".alert").text('no');
 
 		
       
