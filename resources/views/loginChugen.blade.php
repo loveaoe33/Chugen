@@ -106,7 +106,10 @@
     $( "#login" ).click(function() {
 		var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
 		var a=$('#Account').val();
+		
 		var b=$('#Password').val();
+		
+
 		$.ajaxSetup({
     headers: {
         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -116,7 +119,7 @@
      $.ajax({
     type: "POST",
     url: 'check',
-    data: {},
+    data: { Account:a,Password:b,test2:CSRF_TOKEN },
     dataType: "JSON",
     success: function (response) {
 		document.getElementById("alert").style.display=""
@@ -129,7 +132,7 @@
 		setTimeout(function(){   $("#alert").fadeIn("slow");},200);
 		setTimeout(function(){   $("#alert").fadeOut("slow");},2000);
       
-		$(".alert").text(aa);
+		$(".alert").text('帳號或密碼錯誤');
 
 		
       

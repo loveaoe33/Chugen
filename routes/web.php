@@ -28,6 +28,7 @@ Route::get('login', function () {
     return view('login');
 });
 
+/*
 Route::post('check', function (Request $request) {
     
 
@@ -42,6 +43,8 @@ return response()->json($response);
     
 
 });
+
+*/
 
 Route::get('new', function () {
     return view('new');
@@ -84,3 +87,4 @@ Route::get('pdf', function () {
    
 }
 */
+Route::post('check','appleController@checkAjax')->name('apple.checkAjax');
