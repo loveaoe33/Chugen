@@ -107,14 +107,20 @@
 		var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
 		var a=$('#Account').val();
 		var b=$('#Password').val();
+		$.ajaxSetup({
+    headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+});
+
      $.ajax({
     type: "POST",
     url: 'check',
-    data: { Account:a, Password:b, 	_token: CSRF_TOKEN },
-    dataType: "json",
+    data: {},
+    dataType: "JSON",
     success: function (response) {
 		document.getElementById("alert").style.display=""
-		$(".alert").text(response.success);
+		$(".alert").text(response.status);
 		/*
 		$(location).attr('href', 'pdf');
 		*/
@@ -123,7 +129,7 @@
 		setTimeout(function(){   $("#alert").fadeIn("slow");},200);
 		setTimeout(function(){   $("#alert").fadeOut("slow");},2000);
       
-		$(".alert").text("帳號或密碼錯誤");
+		$(".alert").text(aa);
 
 		
       

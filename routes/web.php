@@ -30,16 +30,36 @@ Route::get('login', function () {
 
 Route::post('check', function (Request $request) {
     
-    if($request->ajax()){
-    $Account=$request->input('Account');
-    $Password=$request->input('Password');
-    $Token=$request->input('_Token');
-    return response()->json(['success'=>$Account]);
-    }
-    else 
+
+  
+     $response = array(
+        'status' => 'success',
+        
+    );
+return response()->json($response);
+    
+
+    
+
+});
+
+Route::get('new', function () {
+    return view('new');
+});
+
+Route::get('pdf', function () {
+    Session::put('users', 1234);
+ 
+    if (Session::has('users')) {
+        return view('pdf');
+    }else
     {
-        return response()->json(['error'=>'錯誤']);
-    };
+        return view('login');
+    }
+    
+});
+
+   
     /*
     if($request->ajax()){
     $Account=$request->input('Account');
@@ -64,23 +84,3 @@ Route::post('check', function (Request $request) {
    
 }
 */
-    
-
-});
-
-Route::get('new', function () {
-    return view('new');
-});
-
-Route::get('pdf', function () {
-    Session::put('users', 1234);
- 
-    if (Session::has('users')) {
-        return view('pdf');
-    }else
-    {
-        return view('login');
-    }
-    
-});
-
