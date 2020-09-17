@@ -32,13 +32,13 @@
 				</div>
 				
 
-				<form class="login100-form validate-form" >
+				<form class="login100-form validate-form" method="POST" action='registered'>
 				{{ csrf_field() }}
 					<span class="login100-form-title">
-						Member Login
+						Member registered
 					</span>
 
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<div class="wrap-input100 validate-input" data-validate = "Valid Account is required">
 						<input class="input100" type="text" name="Account" id='Account' placeholder="Account">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
@@ -55,9 +55,8 @@
 					</div>
 					
 					<div class="container-login100-form-btn">
-						<button type='button' class="login100-form-btn" id='login' name='login'>
-							Login
-						</button>
+						<input type ='submit' class="btn btn-primary" id='reg' name='reg' style="cursor:pointer" value='註冊' >
+						
 					</div>
 
 					<div class="text-center p-t-12">
@@ -68,14 +67,12 @@
 							Username / Password?
 						</a>
 					</div>
-					<div class="alert alert-primary" role="alert" id='alert' name='alert' style="display:none; " align="center">
- 
-</div>
+					
 
 					<div class="text-center p-t-56">
-						<a class="txt2"  href="registered">
-							Create your Account
-							<i class="fa fa-long-arrow-right m-l-5"  aria-hidden="true"></i>
+						<a class="txt2" href="sessionD">
+							login your Account
+							<i class="fa fa-long-arrow-right m-l-5" href='sessionD' aria-hidden="true"></i>
 						</a>
 					</div>
 				</form>
@@ -101,44 +98,6 @@
 		$('.js-tilt').tilt({
 			scale: 1.1
 		})
-
-
-    $( "#login" ).click(function() {
-		var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
-		var a=$('#Account').val();
-		
-		var b=$('#Password').val();
-		
-
-		$.ajaxSetup({
-    headers: {
-        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-    }
-});
-
-     $.ajax({
-    type: "POST",
-    url: 'check',
-    data: { Account:a ,Password:b, test2:CSRF_TOKEN },
-    dataType: "JSON",
-    success: function (response) {
-		document.getElementById("alert").style.display=""
-		$(".alert").text(response);
-		
-		$(location).attr('href', 'pdf');
-		
-    },
-    error: function (thrownError) {
-		setTimeout(function(){$("#alert").fadeIn("slow");},200);
-		setTimeout(function(){$("#alert").fadeOut("slow");},2000);
-      
-		$(".alert").text('no');
-
-		
-      
-    }
-  });
-});
 
 
 	</script>

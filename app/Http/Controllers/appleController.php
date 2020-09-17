@@ -3,25 +3,68 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use app\userchugen;
+use DB;
 
 class appleController extends Controller
 {
     public function checkAcjax(Request $request)
     {
-     
+        
         $Account=$request->get('Account');
         $Password=$request->get('Password');
-        $userdata=1;
-      
+       
 
-
+$check=userchugen::where(['Account'=>$Account ,'Password'=>$Password])->get();
+if(count($check)>0)
+{
+    return response()->json('OK');
+}
+else
+{
+    return response()->json('fail');
+}
+/*
+     if(isset($Account) && isset($Password) )
+     {
         
-        $request->session()->put('users', $Account);
-        return response()->json($userdata);
+    
+        $AccountAll =$Account.$Password;
+    return response()->json($Account);
+
+
+
+
+
+     }
+     */
+     /*
+        $userdata=DB::table('userchugen')
+        ->where(['Account'=>$account,'Password'=>$password])
+        ->get();
+        */
+
+
+
+     
     
      
         
         
+    }
+
+
+    public function registered(Request $request)
+    {
+        $a=rand(0,1000);
+        $Account=$request->get('Account');
+        $Password=$request->get('Password');
+        
+
+        DB::table('userchugen')->insert(
+            ['Account' => $Account, 'Password' => $Password ,'AccountAll'=>$a]
+        );
+        return view('loginChugen');
     }
 }
 

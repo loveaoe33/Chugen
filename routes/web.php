@@ -49,6 +49,10 @@ return response()->json($response);
 Route::get('new', function () {
     return view('new');
 });
+Route::get('registered', function () {
+    return view('registered');
+});
+
 
 Route::get('pdf', function () {
     /*
@@ -90,3 +94,4 @@ Route::get('pdf', function () {
 }
 */
 Route::post('check','appleController@checkAcjax')->name('apple.checkAcjax');
+Route::post('registered','appleController@registered')->name('apple.registered');
