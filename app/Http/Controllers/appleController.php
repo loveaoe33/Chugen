@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use app\userchugen;
+use App\userchugen;
 use DB;
 
 class appleController extends Controller
@@ -59,12 +59,20 @@ else
         $a=rand(0,1000);
         $Account=$request->get('Account');
         $Password=$request->get('Password');
-        
+$check=userchugen::where(['Account'=>$Account ,'Password'=>$Password])->get();
+if(count($check)>0)
+{
+   
+    return redirect('registered')->with('msg','帳號密碼已重複');
+
+}else 
+{
 
         DB::table('userchugen')->insert(
             ['Account' => $Account, 'Password' => $Password ,'AccountAll'=>$a]
         );
         return view('loginChugen');
+}
     }
 }
 

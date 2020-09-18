@@ -35,9 +35,14 @@
 				<form class="login100-form validate-form" method="POST" action='registered'>
 				{{ csrf_field() }}
 					<span class="login100-form-title">
-						Member registered
+	
+					 	Member registered
 					</span>
-
+@if (session('msg'))
+    <div class="alert alert-success" id='error' name='error'>
+        {{ session('msg') }}
+    </div>
+@endif
 					<div class="wrap-input100 validate-input" data-validate = "Valid Account is required">
 						<input class="input100" type="text" name="Account" id='Account' placeholder="Account">
 						<span class="focus-input100"></span>
@@ -63,7 +68,9 @@
 						<span class="txt1">
 							Forgot
 						</span>
+
 						<a class="txt2" href="#">
+						
 							Username / Password?
 						</a>
 					</div>
@@ -106,3 +113,8 @@
 
 </body>
 </html>
+<script>
+$( document ).ready(function() {
+	setTimeout(function(){$("#error").fadeOut("slow");},500);
+});
+</script>
