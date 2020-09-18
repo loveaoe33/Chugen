@@ -18,7 +18,7 @@ class appleController extends Controller
 $check=userchugen::where(['Account'=>$Account ,'Password'=>$Password])->get();
 if(count($check)>0)
 {
-    $request->session()->put('users', $Account);
+    $request->session()->put('user', $Account);
     return response()->json('OK');
 }
 
@@ -58,6 +58,7 @@ if(count($check)>0)
         $Account=$request->get('Account');
         $Password=$request->get('Password');
 $check=userchugen::where(['Account'=>$Account ,'Password'=>$Password])->get();
+
 if(count($check)>0)
 {
    
@@ -70,6 +71,8 @@ if(count($check)>0)
             ['Account' => $Account, 'Password' => $Password ,'AccountAll'=>$a]
         );
         return view('loginChugen');
+
+
 }
     }
 }

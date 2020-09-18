@@ -132,7 +132,7 @@
 		setTimeout(function(){$("#alert").fadeIn("slow");},200);
 		setTimeout(function(){$("#alert").fadeOut("slow");},2000);
       
-		$(".alert").text('no');
+		$(".alert").text('帳號或密碼錯誤');
 
 		
       
