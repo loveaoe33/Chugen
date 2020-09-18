@@ -18,12 +18,10 @@ class appleController extends Controller
 $check=userchugen::where(['Account'=>$Account ,'Password'=>$Password])->get();
 if(count($check)>0)
 {
+    $request->session()->put('users', $Account);
     return response()->json('OK');
 }
-else
-{
-    return response()->json('fail');
-}
+
 /*
      if(isset($Account) && isset($Password) )
      {
