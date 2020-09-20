@@ -17,6 +17,9 @@ use App\User;
 Route::get('/', function () {
     return view('main');
 });
+Route::get('/warningP', function () {
+    return view('warningP');
+});
 
 Route::get('sessionD', function () {
     Session::flush();
@@ -95,3 +98,21 @@ Route::get('pdf', function () {
 */
 Route::post('check','appleController@checkAcjax')->name('apple.checkAcjax');
 Route::post('registered','appleController@registered')->name('apple.registered');
+
+
+Route::resource('test','ChugenController');
+Route::get('/index', 'ChugenController@index');
+Route::post('/logout', 'ChugenController@logout');
+
+Route::get('/lala', 'ChugenController@lala');
+Route::get('/test', 'ChugenController@test');
+Route::get('/test2', 'ChugenController@test2');
+Route::post('/sample', 'ChugenController@create');
+Route::post('/check', 'ChugenController@check');
+Route::post('/test/ { id } ', 'ChugenController@destroy');
+Route::get('/live_search/action', 'ChugenController@action')->name('live_search.action');
+Route::get('/live_search/return', 'ChugenController@return')->name('live_search.return');
+Route::get('/login', function () {
+    return view('login');
+});
+

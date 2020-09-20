@@ -18,7 +18,8 @@ class appleController extends Controller
 $check=userchugen::where(['Account'=>$Account ,'Password'=>$Password])->get();
 if(count($check)>0)
 {
-    $request->session()->put('user', $Account);
+    
+    $request->session()->put('users', $Account);
     return response()->json('OK');
 }
 

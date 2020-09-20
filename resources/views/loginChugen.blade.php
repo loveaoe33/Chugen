@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+	
 <head>
+	
 	<title>Login V1</title>
 	<meta name="csrf-token" content="{{ csrf_token() }}" />
 	<meta charset="UTF-8">
@@ -17,13 +19,51 @@
 	<link rel="stylesheet" type="text/css" href="Login_v1/vendor/css-hamburgers/hamburgers.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="Login_v1/vendor/select2/select2.min.css">
+	
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="Login_v1/css/util.css">
 	<link rel="stylesheet" type="text/css" href="Login_v1/css/main.css">
 <!--===============================================================================================-->
 </head>
+
+
+
 <body>
-	
+
+<section class="navbar navbar-default navbar-static-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+					<a href="/" class="navbar-brand"><i class="fa fa-h-square"></i>Chugen Center</a>
+					
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="sessionD" class="smoothScroll">病歷查詢系統</a></li>
+                         <li><a href="#about" class="smoothScroll">異常事件申報</a></li>
+                         <li><a href="#team" class="smoothScroll">國內外旅遊通報</a></li>
+                         <li><a href="#news" class="smoothScroll">院外網站</a></li>
+                         <li><a href="#news" class="smoothScroll">健保局</a></li>
+                  
+                         <li class="appointment-btn"><a href="#appointment">Make an appointment</a></li>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+
+
+
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
@@ -60,7 +100,7 @@
 						</button>
 					</div>
 
-					<div class="text-center p-t-12">
+					<div class="text-center p-t-20">
 						<span class="txt1">
 							Forgot
 						</span>
@@ -72,7 +112,7 @@
  
 </div>
 
-					<div class="text-center p-t-56">
+					<div class="text-center p-t-60">
 						<a class="txt2"  href="registered">
 							Create your Account
 							<i class="fa fa-long-arrow-right m-l-5"  aria-hidden="true"></i>
@@ -147,3 +187,7 @@
 
 </body>
 </html>
+
+<style>
+
+</style>
