@@ -108,7 +108,6 @@ Route::get('/lala', 'ChugenController@lala');
 Route::get('/test', 'ChugenController@test');
 Route::get('/test2', 'ChugenController@test2');
 Route::post('/sample', 'ChugenController@create');
-
 Route::post('/test/ { id } ', 'ChugenController@destroy');
 Route::get('/live_search/action', 'ChugenController@action')->name('live_search.action');
 Route::get('/live_search/return', 'ChugenController@return')->name('live_search.return');

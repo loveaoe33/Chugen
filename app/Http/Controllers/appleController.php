@@ -46,7 +46,9 @@ if(count($check)>0)
 
     public function registered(Request $request)
     {
-        $a=rand(0,1000);
+        $aa=rand(0,100000);
+        $bb=rand(0,100000);
+        $a=md5(rand($aa,$bb));
         $Account=$request->get('Account');
         $Password=$request->get('Password');
 $check=userchugen::where(['Account'=>$Account ,'Password'=>$Password])->get();
@@ -58,11 +60,24 @@ if(count($check)>0)
 
 }else 
 {
+    $check2=userchugen::where(['AccountAll'=>$a])->get();
+    if(count($check2)>0)
+    {
+       
+        $aa=rand(0,100000);
+        $bb=rand(0,100000);
+        $a=md5(rand($aa,$bb));
+
+        $a=$a.$b;
+    
+    }else 
+    {
 
         DB::table('userchugen')->insert(
             ['Account' => $Account, 'Password' => $Password ,'AccountAll'=>$a]
         );
         return view('loginChugen');
+    }
 
 
 }
