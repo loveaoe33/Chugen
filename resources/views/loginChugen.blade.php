@@ -24,12 +24,13 @@
 	<link rel="stylesheet" type="text/css" href="Login_v1/css/util.css">
 	<link rel="stylesheet" type="text/css" href="Login_v1/css/main.css">
 <!--===============================================================================================-->
+
 </head>
 
 
 
 <body>
-
+<header>
 <section class="navbar navbar-default navbar-static-top" role="navigation">
           <div class="container">
 
@@ -60,7 +61,7 @@
 
           </div>
      </section>
-
+</header>
 
 
 
@@ -172,7 +173,7 @@
 		setTimeout(function(){$("#alert").fadeIn("slow");},200);
 		setTimeout(function(){$("#alert").fadeOut("slow");},2000);
       
-		$(".alert").text('帳號或密碼錯誤');
+		$(".alert").text('系統錯誤請聯絡專員');
 
 		
       

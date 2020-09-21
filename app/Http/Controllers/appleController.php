@@ -40,17 +40,8 @@ if(count($check)>0)
      /*
         $userdata=DB::table('userchugen')
         ->where(['Account'=>$account,'Password'=>$password])
-        ->get();
-        */
-
-
-
-     
-    
-     
-        
-        
-    }
+        ->get();*/
+  }
 
 
     public function registered(Request $request)

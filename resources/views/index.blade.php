@@ -22,6 +22,15 @@
    <link rel="stylesheet" href="ChugenMain/main/css/animate.css">
      <link rel="stylesheet" href="ChugenMain/main/css/owl.carousel.css">
      <link rel="stylesheet" href="ChugenMain/main/css/owl.theme.default.min.css">
+
+     <link rel="stylesheet" href="ChugenMain/main/css/bootstrap.min.css">
+     <link rel="stylesheet" href="ChugenMain/main/css/font-awesome.min.css">
+     <link rel="stylesheet" href="ChugenMain/main/css/animate.css">
+     <link rel="stylesheet" href="ChugenMain/main/css/owl.carousel.css">
+     <link rel="stylesheet" href="ChugenMain/main/css/owl.theme.default.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="ChugenMain/main/css/tooplate-style.css">
    <style>
      canvas{
 		-moz-user-select: none;
@@ -488,7 +497,7 @@
       <button type="button" name="create_record" id="create_record" class="btn btn-success btn-sm"style="width:140px;height:50px; font-size:20px;">新增異常通報</button>
      
        <button type="button" onclick="location.href='login'" name="Manager_record" id="Manager_record" class="btn btn-success btn-sm"style="width:140px;height:50px; font-size:20px;">事件管理系統</button>
-       <button type="button" name="create_content" id="create_content" class="btn btn-info" style="width:140px;height:50px; font-size:20px;">單號內容</button>
+       <button type="button" name="create_content" id="create_content" class="btn btn-info" style="width:140px;height:50px; font-size:20px; " disabled='disabled'>單號內容</button>
        <button type="button" name="newopen" id="newopen" class="btn btn-info" style="width:140px;height:50px; font-size:20px;">醫院網站</button></p>
        <div class="input-group">
     <span class="input-group-addon"id='contentnumber'>輸入想查詢單號</span>
