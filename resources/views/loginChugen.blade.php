@@ -166,7 +166,7 @@
 		document.getElementById("alert").style.display=""
 		$(".alert").text(response);
 		
-		$(location).attr('href', 'pdf');
+		$(location).attr('href', '/');
 		
     },
     error: function (thrownError) {

@@ -76,13 +76,19 @@ http://www.tooplate.com/view/2098-health
                <!-- MENU LINKS -->
                <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                         <li><a href="sessionD" class="smoothScroll">病歷查詢系統</a></li>
+                         <li><a href="pdf" target="_blank" class="smoothScroll">病歷查詢系統</a></li>
                          <li><a href="#about" class="smoothScroll">異常事件申報</a></li>
                          <li><a href="#team" class="smoothScroll">國內外旅遊通報</a></li>
                          <li><a href="#news" class="smoothScroll">院外網站</a></li>
                          <li><a href="#news" class="smoothScroll">健保局</a></li>
-                  
-                         <li class="appointment-btn"><a href="#appointment">Make an appointment</a></li>
+                         @if (session('users'))
+                         <li><a>您好: {{ session('users') }}</a></li>
+                         <script>
+$("#lgbtn").val("登出");
+                         </script>
+                         @endif
+                         
+                         <li class="appointment-btn" id='lgbtn' name='lgbtn'><a href="sessionD">請登入帳號</a></li>
                     </ul>
                </div>
 

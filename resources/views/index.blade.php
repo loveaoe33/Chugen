@@ -64,6 +64,9 @@
                          <li><a href="#team" class="smoothScroll">國內外旅遊通報</a></li>
                          <li><a href="#news" class="smoothScroll">院外網站</a></li>
                          <li><a href="#news" class="smoothScroll">健保局</a></li>
+                         @if (session('users'))
+                         <li><a href="#news" class="smoothScroll">登出 {{ session('users') }} 帳號</a></li>
+                         @endif
                   
                         
                     </ul>
