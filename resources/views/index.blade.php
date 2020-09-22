@@ -14,7 +14,7 @@
    <script src="../Js/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
    <link href="../Js/bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet" />
    <script src="../Js/jquery-1.11.3.min.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
    <script src="../../utils.js"></script>
@@ -31,6 +31,10 @@
 
      <!-- MAIN CSS -->
      <link rel="stylesheet" href="ChugenMain/main/css/tooplate-style.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ </head>
    <style>
      canvas{
 		-moz-user-select: none;
@@ -462,10 +466,7 @@
 </div>
 <head>
   <title>重仁骨科醫院</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
- </head>
+  
  <body>
    
  

@@ -81,6 +81,7 @@ http://www.tooplate.com/view/2098-health
                          <li><a href="#about" class="smoothScroll">異常事件申報</a></li>
                          <li><a href="#team" class="smoothScroll">國內外旅遊通報</a></li>
                          <li><a href="#news" class="smoothScroll">院外網站</a></li>
+                         <li><a href="#news" class="smoothScroll">網路掛號</a></li>
                          <li><a href="#news" class="smoothScroll">健保局</a></li>
                          @if (session('users'))
                          <li><a>您好: {{ session('users') }}</a></li>
