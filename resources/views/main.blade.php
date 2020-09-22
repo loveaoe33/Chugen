@@ -16,7 +16,8 @@ http://www.tooplate.com/view/2098-health
      <meta name="keywords" content="">
      <meta name="author" content="Tooplate">
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+     <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+     <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
      <link rel="stylesheet" href="ChugenMain/main/css/bootstrap.min.css">
      <link rel="stylesheet" href="ChugenMain/main/css/font-awesome.min.css">
      <link rel="stylesheet" href="ChugenMain/main/css/animate.css">
@@ -84,11 +85,12 @@ http://www.tooplate.com/view/2098-health
                          @if (session('users'))
                          <li><a>您好: {{ session('users') }}</a></li>
                          <script>
-$("#lgbtn").val("登出");
+
                          </script>
                          @endif
                          
-                         <li class="appointment-btn" id='lgbtn' name='lgbtn'><a href="sessionD">請登入帳號</a></li>
+                         <li class="appointment-btn" ><a href="sessionD" id='lgbtn' name='lgbtn'>請登入帳號</a></li>
+
                     </ul>
                </div>
 
@@ -470,3 +472,16 @@ $("#lgbtn").val("登出");
 
 </body>
 </html>
+
+<script>
+$(document).ready(function() {
+     let session = {{ session('users') }}
+if(session!=="")
+
+{
+    
+     $("#lgbtn").text("登出");
+     $("#lgbtn").attr("href","/logout");
+}
+});
+</script>

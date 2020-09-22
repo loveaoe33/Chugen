@@ -56,6 +56,11 @@ Route::get('registered', function () {
     return view('registered');
 });
 
+Route::get('/logout', function () {
+    Session::flush();
+    return view('main');
+});
+
 
 Route::get('pdf', function () {
     /*
