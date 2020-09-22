@@ -83,7 +83,7 @@ http://www.tooplate.com/view/2098-health
                          <li><a href="#news" class="smoothScroll">院外網站</a></li>
                          <li><a href="#news" class="smoothScroll">健保局</a></li>
                          @if (session('users'))
-                         <li><a>您好: {{ session('users') }}</a></li>
+                         <li><a>您好: '{{ session('users') }}'</a></li>
                          <script>
 
                          </script>
@@ -474,8 +474,10 @@ http://www.tooplate.com/view/2098-health
 </html>
 
 <script>
+
+
 $(document).ready(function() {
-     let session = {{ session('users') }}
+     let session = '{{ session('users') }}'
 if(session!=="")
 
 {
