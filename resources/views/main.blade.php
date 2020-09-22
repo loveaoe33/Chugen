@@ -71,7 +71,7 @@ http://www.tooplate.com/view/2098-health
                     </button>
 
                     <!-- lOGO TEXT HERE -->
-                    <a href="Main" class="navbar-brand"><i class="fa fa-h-square"></i>Chugen Center</a>
+                    <a href="Main" class="navbar-brand"><i class="fa fa-h-square"></i>ospital Chugen</a>
                </div>
 
                <!-- MENU LINKS -->
@@ -83,7 +83,7 @@ http://www.tooplate.com/view/2098-health
                          <li><a href="#news" class="smoothScroll">院外網站</a></li>
                          <li><a href="#news" class="smoothScroll">健保局</a></li>
                          @if (session('users'))
-                         <li><a>您好: '{{ session('users') }}'</a></li>
+                         <li><a>您好: {{ session('users') }}</a></li>
                          <script>
 
                          </script>
@@ -182,7 +182,7 @@ http://www.tooplate.com/view/2098-health
 
                     <div class="col-md-4 col-sm-6">
                          <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
-                              <img src="ChugenMain/main/images/team-image1.jpg" class="img-responsive" alt="">
+                              <img src="/ChugenImage/doc3.png" class="img-responsive" alt="">
 
                                    <div class="team-info">
                                         <h3>Nate Baston</h3>
@@ -202,7 +202,7 @@ http://www.tooplate.com/view/2098-health
 
                     <div class="col-md-4 col-sm-6">
                          <div class="team-thumb wow fadeInUp" data-wow-delay="0.4s">
-                              <img src="ChugenMain/main/images/team-image2.jpg" class="img-responsive" alt="">
+                              <img src="/ChugenImage/doc4.png" class="img-responsive" alt="">
 
                                    <div class="team-info">
                                         <h3>Jason Stewart</h3>
@@ -223,7 +223,7 @@ http://www.tooplate.com/view/2098-health
 
                     <div class="col-md-4 col-sm-6">
                          <div class="team-thumb wow fadeInUp" data-wow-delay="0.6s">
-                              <img src="ChugenMain/main/images/team-image3.jpg" class="img-responsive" alt="">
+                              <img src="/ChugenImage/doc5.png" class="img-responsive" alt="">
 
                                    <div class="team-info">
                                         <h3>Miasha Nakahara</h3>
@@ -258,18 +258,18 @@ http://www.tooplate.com/view/2098-health
                          </div>
                     </div>
 
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-3 col-sm-6">
                          <!-- NEWS THUMB -->
                          <div class="news-thumb wow fadeInUp" data-wow-delay="0.4s">
                               <a href="news-detail.html">
-                                   <img src="ChugenMain/main/images/news-image1.jpg" class="img-responsive" alt="">
+                                   <img src="/ChugenImage/未命名3.png" class="img-responsive" alt="">
                               </a>
                               <div class="news-info">
                                    <span>March 08, 2018</span>
                                    <h3><a href="news-detail.html">About Amazing Technology</a></h3>
                                    <p>Maecenas risus neque, placerat volutpat tempor ut, vehicula et felis.</p>
                                    <div class="author">
-                                        <img src="ChugenMain/main/images/author-image.jpg" class="img-responsive" alt="">
+                                        <img src="hugenMain/mainC/images/author-image.jpg" class="img-responsive" alt="">
                                         <div class="author-info">
                                              <h5>Jeremie Carlson</h5>
                                              <p>CEO / Founder</p>
@@ -279,11 +279,11 @@ http://www.tooplate.com/view/2098-health
                          </div>
                     </div>
 
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-3 col-sm-6">
                          <!-- NEWS THUMB -->
                          <div class="news-thumb wow fadeInUp" data-wow-delay="0.6s">
                               <a href="news-detail.html">
-                                   <img src="ChugenMain/main/images/news-image2.jpg" class="img-responsive" alt="">
+                                   <img src="/ChugenImage/門診表圖.png" class="img-responsive" alt="">
                               </a>
                               <div class="news-info">
                                    <span>February 20, 2018</span>
@@ -300,11 +300,33 @@ http://www.tooplate.com/view/2098-health
                          </div>
                     </div>
 
-                    <div class="col-md-4 col-sm-6">
+
+                    <div class="col-md-3 col-sm-6">
+                         <!-- NEWS THUMB -->
+                         <div class="news-thumb wow fadeInUp" data-wow-delay="0.6s">
+                              <a href="news-detail.html">
+                                   <img src="/ChugenImage/未命名6.png" class="img-responsive" alt="">
+                              </a>
+                              <div class="news-info">
+                                   <span>February 20, 2018</span>
+                                   <h3><a href="news-detail.html">Introducing a new healing process</a></h3>
+                                   <p>Fusce vel sem finibus, rhoncus massa non, aliquam velit. Nam et est ligula.</p>
+                                   <div class="author">
+                                        <img src="ChugenMain/main/images/author-image.jpg" class="img-responsive" alt="">
+                                        <div class="author-info">
+                                             <h5>Jason Stewart</h5>
+                                             <p>General Director</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
                          <!-- NEWS THUMB -->
                          <div class="news-thumb wow fadeInUp" data-wow-delay="0.8s">
                               <a href="news-detail.html">
-                                   <img src="ChugenMain/main/images/news-image3.jpg" class="img-responsive" alt="">
+                                   <img src="/ChugenImage/未命名5.png" class="img-responsive" alt="">
                               </a>
                               <div class="news-info">
                                    <span>January 27, 2018</span>
