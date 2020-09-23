@@ -165,6 +165,16 @@ class ChugenController extends Controller
         return redirect('test');       
     }
 
+    public function editindex()
+    {
+        $query=Chugen2::all();
+        return view('ManagIndex',compact('query'));
+
+    
+    }
+
+
+
 
 
     function return(Request $request)

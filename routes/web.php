@@ -17,6 +17,9 @@ use App\User;
 Route::get('/', function () {
     return view('main');
 });
+
+
+
 Route::get('/warningP', function () {
     return view('warningP');
 });
@@ -108,6 +111,8 @@ Route::post('registered','appleController@registered')->name('apple.registered')
 Route::resource('test','ChugenController');
 Route::get('/index', 'ChugenController@index');
 Route::post('/logout', 'ChugenController@logout');
+
+Route::get('/editindex', 'ChugenController@editindex');
 
 Route::get('/lala', 'ChugenController@lala');
 Route::get('/test', 'ChugenController@test');
