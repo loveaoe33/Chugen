@@ -17,6 +17,28 @@ class ChugenController extends Controller
         return view('Index',compact('query'));
        
     }
+
+
+    // function api()
+    // {
+    //     $invData = [
+    //         'UserId' => '1',
+    //         'Items' => '$itemData',
+    //         'CustomerName' => 'User Name',
+    //         'CustomerEmail' => 'email@address.com',
+    //         'CustomerPhone' => '0912345678',
+    //         'OrderId' => '123',
+    //         'Donation' => '456',
+    //         'LoveCode' => '168001',
+    //         'Print' => '0',
+    //         'CarruerType' => 1
+    //     ];
+     
+       
+    // }
+
+   
+
     function lala()
     {
         

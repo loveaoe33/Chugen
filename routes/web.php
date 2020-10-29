@@ -113,6 +113,7 @@ Route::get('/index', 'ChugenController@index');
 Route::post('/logout', 'ChugenController@logout');
 
 Route::get('/editindex', 'ChugenController@editindex');
+Route::get('/api', 'ChugenController@api');
 
 Route::get('/lala', 'ChugenController@lala');
 Route::get('/test', 'ChugenController@test');
