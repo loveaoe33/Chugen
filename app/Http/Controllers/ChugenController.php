@@ -102,10 +102,34 @@ class ChugenController extends Controller
 
     }
 
+    function Manager(Request $request)
+    {
+        $query=Chugen2::all();
+        return view('ManagIndex',compact('query'));
+    }
+
     function create(Request $request)
     {
- 
-        echo'123';
+ $name=$request->get('name');
+ $develop=$request->get('develop');
+ $category=$request->get('category');
+ $number=$request->get('number');
+ $dispose=$request->get('dispose');
+ $exampleFormControlTextarea1=$request->get('exampleFormControlTextarea1');
+ $now=$request->get('now');
+ DB::table('chugen2')->insert(
+    array(
+           'name'     =>   $name, 
+           'develop'   =>   $develop,
+           'category'   =>   $category,
+           'number'   =>    $number,
+           'now'   =>  $now,
+           'dispose'   =>  $dispose,
+           'all'   =>   $exampleFormControlTextarea1
+    )
+);
+
+return redirect('index');
     
  
 

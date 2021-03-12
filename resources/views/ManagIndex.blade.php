@@ -70,7 +70,7 @@
          <th>醫療處置</th>
          <th>病歷號</th>
          <th>建立日期</th>
-         <th>更新日期</th>
+
          <th>編輯</th>
          <th>刪除</th>
          <th>查看內容</th>
@@ -82,10 +82,10 @@
 <td>{{ $var->develop }}</td>
 <td>{{ $var->category }}</td>
 <td>{{ $var->now }}</td>
-<td>{{ $var->dispose	 }}</td>
+<td>{{ $var->dispose}}</td>
 <td>{{ $var->number }}</td>
 <td>{{ $var->created_at }}</td>
-<td>{{ $var->updated_at }}</td>
+
 
 <td><a href="{{ url('test/'.$var->id.'/edit') }}" role='btn' class='btn btn-primary'>編輯</a></td>
 
@@ -106,10 +106,7 @@
 </table>
 
 </section>
-<h1>{{Session::get('data')}}</h1>
-<form action="{{ url('logout') }}" method="post">
-<input type="hidden" name="_token" value="{{ csrf_token()}}">
-<input type="submit" value="登出"  role="btn" class="btn btn-danger" >
+
 </form> 
 
 <script>

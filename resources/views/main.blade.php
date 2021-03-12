@@ -78,7 +78,7 @@ http://www.tooplate.com/view/2098-health
                <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                          <li><a href="pdf" target="_blank" class="smoothScroll">病歷查詢系統</a></li>
-                         <li><a href="#about" class="smoothScroll">異常事件申報</a></li>
+                         <li><a href="index" class="smoothScroll">異常事件申報</a></li>
                          <li><a href="#team" class="smoothScroll">國內外旅遊通報</a></li>
                          <li><a href="#news" class="smoothScroll">院外網站</a></li>
                          <li><a href="http://61.222.240.247/" class="smoothScroll">網路掛號</a></li>
@@ -206,7 +206,7 @@ http://www.tooplate.com/view/2098-health
                               <img src="/ChugenImage/doc4.png" class="img-responsive" alt="">
 
                                    <div class="team-info">
-                                        <h3>Jason Stewart</h3>
+                                        <!-- <h3>Jason Stewart</h3> -->
                                         <p>Pregnancy</p>
                                         <div class="team-contact-info">
                                              <p><i class="fa fa-phone"></i> 010-070-0170</p>
@@ -270,10 +270,10 @@ http://www.tooplate.com/view/2098-health
                                    <h3><a href="news-detail.html">About Amazing Technology</a></h3>
                                    <p>Maecenas risus neque, placerat volutpat tempor ut, vehicula et felis.</p>
                                    <div class="author">
-                                        <img src="hugenMain/mainC/images/author-image.jpg" class="img-responsive" alt="">
+                                        <!-- <img src="hugenMain/mainC/images/author-image.jpg" class="img-responsive" alt=""> -->
                                         <div class="author-info">
-                                             <h5>Jeremie Carlson</h5>
-                                             <p>CEO / Founder</p>
+                                             <!-- <h5>Jeremie Carlson</h5>
+                                             <p>CEO / Founder</p> -->
                                         </div>
                                    </div>
                               </div>
@@ -291,10 +291,10 @@ http://www.tooplate.com/view/2098-health
                                    <h3><a href="news-detail.html">Introducing a new healing process</a></h3>
                                    <p>Fusce vel sem finibus, rhoncus massa non, aliquam velit. Nam et est ligula.</p>
                                    <div class="author">
-                                        <img src="ChugenMain/main/images/author-image.jpg" class="img-responsive" alt="">
+                                        <!-- <img src="ChugenMain/main/images/author-image.jpg" class="img-responsive" alt=""> -->
                                         <div class="author-info">
-                                             <h5>Jason Stewart</h5>
-                                             <p>General Director</p>
+                                             <!-- <h5>Jason Stewart</h5> -->
+                                             <!-- <p>General Director</p> -->
                                         </div>
                                    </div>
                               </div>
@@ -313,10 +313,10 @@ http://www.tooplate.com/view/2098-health
                                    <h3><a href="news-detail.html">Introducing a new healing process</a></h3>
                                    <p>Fusce vel sem finibus, rhoncus massa non, aliquam velit. Nam et est ligula.</p>
                                    <div class="author">
-                                        <img src="ChugenMain/main/images/author-image.jpg" class="img-responsive" alt="">
+                                        <!-- <img src="ChugenMain/main/images/author-image.jpg" class="img-responsive" alt=""> -->
                                         <div class="author-info">
-                                             <h5>Jason Stewart</h5>
-                                             <p>General Director</p>
+                                             <!-- <h5>Jason Stewart</h5> -->
+                                             <!-- <p>General Director</p> -->
                                         </div>
                                    </div>
                               </div>
@@ -334,10 +334,10 @@ http://www.tooplate.com/view/2098-health
                                    <h3><a href="news-detail.html">Review Annual Medical Research</a></h3>
                                    <p>Vivamus non nulla semper diam cursus maximus. Pellentesque dignissim.</p>
                                    <div class="author">
-                                        <img src="ChugenMain/main/images/author-image.jpg" class="img-responsive" alt="">
+                                        <!-- <img src="ChugenMain/main/images/author-image.jpg" class="img-responsive" alt=""> -->
                                         <div class="author-info">
-                                             <h5>Andrio Abero</h5>
-                                             <p>Online Advertising</p>
+                                             <!-- <h5>Andrio Abero</h5>
+                                             <p>Online Advertising</p> -->
                                         </div>
                                    </div>
                               </div>
